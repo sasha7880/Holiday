@@ -1,0 +1,28 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholder" as *;
+.button {
+    padding: 11px 36px 12px 36px;
+    background-color: $btnColor;
+    border-radius: 16px;
+    outline: 2px solid $btnColor;
+    display: block;
+
+    &:hover {
+        background-color: $textPrimaryColor;
+        color: $btnColor;
+        transition: 0.5s;
+    }
+
+    &--partner {
+        background-color: $textPrimaryColor;
+        color: $btnColor;
+        margin: auto;
+
+        &:hover {
+            background-color: $btnColor;
+            color: $textPrimaryColor;
+
+        }
+    }
+
+}

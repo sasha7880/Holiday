@@ -1,0 +1,85 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholder" as *;
+
+.hero {
+    background-image: url("../imgs/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @extend %flex-center;
+
+    &__container {
+        @extend %flex-center;
+        flex-direction: column;
+
+        @media (min-width: 769px) {
+            gap: 35px;
+        }
+    }
+
+    &__title {
+        font-family: $fontPrimary;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        text-align: center;
+
+         @media (min-width: 769px) {
+            padding-bottom: 0;
+            font-size: 52px;
+        }
+    }
+
+    &__text {
+        font-family: $fontSecondary;
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 20px;
+        @media (min-width: 769px) {
+            padding-bottom: 0;
+            font-size: 24px;
+        }
+    }
+    &__desc {
+    font-family: $second-family;
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 33px;
+    color: $light-txt-color;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 125px;
+        padding-bottom: 233px;
+    }
+
+    .button {
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero {
+        padding-top: 22px;
+        padding-bottom: 138px;
+
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__desc {
+            font-size: 18px;
+        }
+    }
+
+    .button {
+        padding: 13px 38px;
+    }
+} 
+}

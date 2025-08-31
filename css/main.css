@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.hero__container, .hero, .autorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700px;
+  line-height: 1.2;
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+  min-width: 320px;
+  max-width: 940px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 670px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 283px;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  position: relative;
+}
+.header__container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+.autorization {
+  gap: 5px;
+}
+.autorization__link {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.autorization__link--border {
+  border: 2px solid #FFFFFF;
+  border-radius: 16px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../imgs/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.hero__container {
+  flex-direction: column;
+}
+.hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.hero__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300px;
+  padding-bottom: 20px;
+}

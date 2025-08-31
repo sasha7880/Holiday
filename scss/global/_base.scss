@@ -1,0 +1,19 @@
+@use "../utils/variables" as *;
+
+
+body {
+    color: $textPrimaryColor;
+    font-family: $fontPrimary;
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 1.2;
+}
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+    min-width: 320px;
+    max-width: 940px;
+
+}
+
+
