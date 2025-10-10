@@ -21,12 +21,23 @@
             justify-content: space-between;
             align-items: center;
         }
-        @media (min-width:1140px){
+
+        @media (min-width:1140px) {
             width: 940px;
         }
 
-    }
+        @media (max-width: 320px) {
+            .header {
+
+                &__container {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 123px;
+                    top: 20px;
+                }
+            }
 
 
 
-}
+
+        }

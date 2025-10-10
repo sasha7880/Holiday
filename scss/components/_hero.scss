@@ -25,7 +25,7 @@
         padding-bottom: 12px;
         text-align: center;
 
-         @media (min-width: 769px) {
+        @media (min-width: 769px) {
             padding-bottom: 0;
             font-size: 52px;
         }
@@ -36,50 +36,88 @@
         font-size: 18px;
         font-weight: 300;
         padding-bottom: 20px;
+
         @media (min-width: 769px) {
             padding-bottom: 0;
             font-size: 24px;
         }
     }
+
     &__desc {
-    font-family: $second-family;
-    font-weight: 300;
-    font-size: 24px;
-    padding-bottom: 33px;
-    color: $light-txt-color;
+        font-family: $second-family;
+        font-weight: 300;
+        font-size: 24px;
+        padding-bottom: 33px;
+        color: $light-txt-color;
 
-}
-
-
-
-@media (max-width: 768px) {
-    .hero {
-        padding-top: 125px;
-        padding-bottom: 233px;
     }
 
-    .button {
-        padding: 12px 10px;
-    }
-}
 
-@media (max-width: 320px) {
-    .hero {
-        padding-top: 22px;
-        padding-bottom: 138px;
 
-        &__title {
-            font-size: 30px;
-            text-align: center;
+    @media (max-width: 768px) {
+        .hero {
+            padding-top: 125px;
+            padding-bottom: 233px;
         }
 
-        &__desc {
-            font-size: 18px;
+        .button {
+            padding: 12px 10px;
         }
     }
 
-    .button {
-        padding: 13px 38px;
+    @media (max-width: 320px) {
+        .hero {
+            padding-top: 22px;
+            padding-bottom: 138px;
+
+            &__title {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            &__desc {
+                font-size: 18px;
+            }
+        }
+
+        .button {
+            padding: 13px 38px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: url("../images/hero-bg@3x.webp");
+            }
+        }
     }
-} 
+
+    @media (max-width: 320px) {
+        .hero {
+            padding-top: 214px;
+            padding-bottom: 138px;
+            background-image: url("../images/hero-bg.webp");
+
+            &__title {
+                font-size: 30px;
+                text-align: center;
+                width: 306px;
+            }
+
+            &__desc {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: url("../images/hero-bg@2x.webp");
+            }
+        }
+    }
 }
