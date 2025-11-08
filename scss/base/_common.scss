@@ -1,0 +1,13 @@
+body {
+    font-family: $main-font;
+    color: $main-color;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 940px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}

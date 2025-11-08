@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday</title>
-    <link href="./css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,70 +18,98 @@
         <div class="container header__container">
             <ul class="autorization">
                 <li class="autorization__item">
-                    <a class="autorization__link" href="">Lon In</a>
+                    <a href="" class="autorization__link">Log in</a>
+                    <a href="" class="autorization__link autorization__link--border">Sign up</a>
                 </li>
-                <li class="autorization__item">
-                    <a class="autorization__link autorization__link--border" href="">Sign Up</a>
-                </li>
-                </ul>
-                <a class="logo" href="">
-                    URLAUBSGLÜCK
-                </a>
+            </ul>
+            <a href="./index.html" class="logo">URLAUBSGLÜCK</a>
         </div>
     </header>
+
     <main class="main">
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Share your holiday dreams</h1>
-                <p class="hero__text">And find the perfect parthner to fullfill it</p>
-                <button class="hero__button">Find your holiday parthner</button>
+                <p class="hero__text">And find the perfect partner to fullfill it</p>
+                <button class="button">Find your holiday partner</button>
             </div>
         </section>
-        <section class="parthners">
-            <div class="container parthners__container"></div>
-            <h2 class="parthners__title">Meet your parthner for your best holiday</h2>
-            <ul class="parthners__list">
-                <li class="parthners__item">
-                    <article>
-                        <div class="partner__photo partner__photo--bradley">
-                        <img class="parthner__img" src="./imgs/partners/bradley/brenley-hunter.png" alt="">
-                        </div>
-                        <h3 class="parthner__name">Bradley Hunter</h3>
-                        <p class="parthner__text">Based in Chicago. I love playing tennis and loud music.</p>
-                    </article>
-                </li>
-                <li class="parthners__item">
-                    <article>
-                        <div class="partner__photo partner__photo--lucas">
-                        <img class="parthner__img" src="./imgs/partners/lucas/lukas-marsha.png" alt="">
-                        </div>
-                        <h3 class="parthner__name">Lucas Marsha</h3>
-                        <p class="parthner__text">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
-                    </article>
-                </li>
-                <li class="parthners__item">
-                    <article>
-                        <div class="partner__photo partner__photo--walker">
-                        <img class="parthner__img" src="./imgs/partners/heather/heater-walker.png" alt="">
-                        </div>
-                        <h3 class="parthner__name">Heather Walker</h3>
-                        <p class="parthner__text">I'm a happy person that loves cats and climbing on mountains.</p>
-                    </article>
-                </li>
-                <li class="parthners__item">
-                    <article>
-                        <div class="partner__photo partner__photo--anna">
-                        <img class="parthner__img" src="./imgs/partners/anna/anna.png" alt="">
-                        </div>
-                        <h3 class="parthner__name">Anna Hunter</h3>
-                        <p class="parthner__text">Based in Chicago. I love playing tennis and loud music.</p>
-                    </article>
-                </li>
-            </ul>
-            <button class="button button--partner">See other partners</button>
+
+        <section class="partners">
+            <div class="container">
+                <h2 class="partners__title">Meet a partner for your best holiday</h2>
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <article class="partner">
+                            <div class="partner__photo partner__photo--bradley">
+                                <picture>
+                                    <source
+                                        srcset="./img/partners/bradley/bradley-desctop@1x.png 1x, ./img/partners/bradley/bradley-desctop@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/bradley/bradley-tablet@1x.png 1x, ./img/partners/bradley/bradley-tablet@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/bradley/bradley-mobile@1x.png 1x, ./img/partners/bradley/bradley-mobile@2x.png 2x">
+                                    <img src="./img/partners/bradley/photo.png" alt="bradley" class="partner__image">
+                                </picture>
+                            </div>
+                            <h3 class="partner__name">Bradley Hunter</h3>
+                            <p class="partner__info">Based in Chicago. I love playing tennis and loud music.</p>
+                        </article>
+                    </li>
+                    <li class="partners__item">
+                        <article class="partner">
+                            <div class="partner__photo partner__photo--lucas">
+                                <picture>
+                                    <source
+                                        srcset="./img/partners/lucas/lucas-desctop@1x.png 1x, ./img/partners/lucas/lucas-desctop@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/lucas/lucas-tablet@1x.png 1x, ./img/partners/lucas/lucas-tablet@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/lucas/lucas-mobile@1x.png 1x, ./img/partners/lucas/lucas-mobile@2x.png 2x">
+                                    <img src="./img/partners/lucas/photo.png" alt="" class="partner__image">
+                                </picture>
+                            </div>
+                            <h3 class="partner__name">Lucas Marsha</h3>
+                            <p class="partner__info">I get my inspiration from nature and objects around me. I have a
+                                passion to colours, typography and skateboards.</p>
+                        </article>
+                    </li>
+                    <li class="partners__item">
+                        <article class="partner">
+                            <div class="partner__photo partner__photo--heather">
+                                <picture>
+                                    <source
+                                        srcset="./img/partners/heather/heather-desctop@1x.png 1x, ./img/partners/heather/heather-desctop@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/heather/heather-tablet@1x.png 1x, ./img/partners/heather/heather-tablet@2x.png 2x">
+                                    <source
+                                        srcset="./img/partners/heather/heather-mobile@1x.png 1x, ./img/partners/heather-mobile@2x.png 2x">
+                                    <img src="./img/partners/heather/photo.png" alt="" class="partner__image">
+                                </picture>
+                            </div>
+                            <h3 class="partner__name">Heather Walker</h3>
+                            <p class="partner__info">I'm a happy person that loves cats and climbing on mountains.</p>
+                        </article>
+                    </li>
+                    <li class="partners__item">
+                        <article class="partner">
+                            <div class="partner__photo partner__photo--anna">
+                                <picture>
+                                     <source srcset="./img/partners/anna/anna-desctop@1x.png 1x, ./img/partners/anna/anna-desctop@2x.png 2x">
+                                <source srcset="./img/partners/anna/anna-tablet@1x.png 1x, ./img/partners/anna/anna-tablet@2x.png 2x">
+                                <source srcset="./img/partners/anna/anna-mobile@1x.png 1x, ./img/partners/anna/anna-mobile@2x.png 2x">
+                                <img src="./img/partners/anna/photo.png" alt="" class="partner__image">
+                                </picture>
+                            </div>
+                            <h3 class="partner__name">Anna Hunter</h3>
+                            <p class="partner__info">Based in Chicago. I love playing tennis and loud music.</p>
+                        </article>
+                    </li>
+                </ul>
+                <button class="button button--partner">See other partners</button>
+            </div>
         </section>
     </main>
-    <footer></footer>
 </body>
 
 </html>
